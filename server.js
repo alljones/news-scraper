@@ -47,7 +47,7 @@ app.get("/scrape", function(req, res) {
     // Now, we grab every h2 within an article tag, and do the following:
     $(".c-entry-box--compact__title").each(function(i, element) {
       // Save an empty result object
-      var result = {};
+      let result = {};
 
       // Add the text and href of every link, and save them as properties of the result object
       result.title = $(this)
